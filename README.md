@@ -51,7 +51,7 @@ This is a Flutter-based application designed to provide an engaging platform for
    ```bash
    node server.js
    ```
-4. The server will run on `http://localhost:3000`.
+4. The server will run on `http://localhost:5000`.
 
 ### Frontend Setup
 1. Navigate to the `gaming_learning_app/` directory:
@@ -102,21 +102,12 @@ This is a Flutter-based application designed to provide an engaging platform for
 ## Troubleshooting
 
 ### Backend
-- Ensure the Node.js server is running on `http://localhost:3000`.
+- Ensure the Node.js server is running on `http://localhost:5000`.
 - Check the `server.js` file for any errors.
 
 ### Frontend
 - Ensure the Flutter SDK is installed and properly configured.
 - Verify the backend server is accessible from the app.
 
----
 
-## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request.
-
----
-
-## License
-
-This project is licensed under the MIT License.
