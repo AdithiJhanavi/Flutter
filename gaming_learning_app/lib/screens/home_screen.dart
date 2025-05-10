@@ -27,14 +27,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _loadCourseContent() async {
     try {
-      debugPrint("Fetching course content...");
       final rawData = await widget.apiService.createCourseContent("KG1");
-      debugPrint("Raw data received: $rawData");
       setState(() {
         contentList = rawData.map((e) => CourseContent.fromJson(e)).toList();
         isLoading = false;
       });
-      debugPrint("Parsed content list: $contentList");
     } catch (e) {
       debugPrint("Error loading course content: $e");
       setState(() {
